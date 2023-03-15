@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    padding: 2% 6%;
+    /* margin: 2% 6%; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right; /* ul centrira desno*/
+    
+}
+/* ul{
+    display: flex;
+} */
+
+.nav-list-item{
+    list-style: none;
+    display: inline-block; 
+    padding: 8px 25px;
+    position: relative; 
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-link::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: #f44336;
+    display: block;
+    margin: auto;  /* sa margin auto se stavi da tranzicija ide od sredine pa prema krajevima, bez ovoga bi islo od pocetka (levo) do kraja (desno) */
+    transition: 0.5s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
