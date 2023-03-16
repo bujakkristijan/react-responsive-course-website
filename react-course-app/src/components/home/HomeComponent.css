@@ -9,8 +9,54 @@
     top: 0;
     left: 0;
     z-index: -1; 
+    /* text-align: center; */
 }  
 
 /* .home-content-container{
     margin-top: 20px;
 } */
+.home-content-container{
+    width: 100%; /* proveriti zasto kad je 90% i margin auto, nece da ga centrira po horizontali*/
+    color: white;
+    position: absolute;
+    
+    top: 50%;
+    /* left: 50%; */
+    
+    /* margin: auto;  */
+    text-align: center;  /* sve child elemente centrira po horizontali */
+}
+
+.paragraph{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.visit-btn{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    /* font-size: 13px; */
+    /* background: transparent;  */ /* nema potrebe jer je vec trasnparent u sustini*/
+    /* position: relative; */
+}
+
+.visit-btn:hover{
+    border: 1px solid #f44336;
+    background:  #f44336;
+    transition: 0.7s;
+}
+/* za iphone se i manje, na ostalim je okej */
+@media(max-width: 376px){
+    .title{
+        font-size: x-large;
+    }
+    .paragraph{
+        font-size: small; 
+    }
+}
+
+

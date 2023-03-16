@@ -45,3 +45,38 @@
 .nav-link:hover::after{
     width: 100%;
 }
+
+
+.fa{
+    /* display: none; */
+}
+
+@media(max-width: 700px){
+    .nav-list-item{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh; /* da zauzme view height, da je 100% bilo bi 100% od parent elementa*/
+        width: 200px;
+        top: 0;
+        right: -200px; /* da se ne vidi, toliki mu je i width, pa ga skloni */
+        text-align: left; /* moze i ovako, pozicionira content iz nav-list-itema u levo, a moze i na nav-list-item da se stavi, uradice isto*/
+        z-index: 2; 
+        transition: 1s;
+    }
+    .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-ul{
+        padding: 30px;
+    }
+    
+    
+}
