@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+
+import CourseComponent from '../course/CourseComponent';
 import './HomeComponent.css';
 
 const HomeComponent = () => {
   return (
+    <>
     <div className='home-main-container'>
         <div className='home-content-container'>
           <h1 className='title'>World's biggest university</h1>
@@ -12,6 +15,9 @@ const HomeComponent = () => {
         </div>
         
     </div>
+    <CourseComponent/>
+    
+    </>
   )
 }
 

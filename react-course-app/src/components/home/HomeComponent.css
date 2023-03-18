@@ -1,5 +1,4 @@
 .home-main-container{
-  
     min-height: 100vh;
     width: 100vw;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../../images/banner.png'); 
@@ -9,6 +8,7 @@
     top: 0;
     left: 0;
     z-index: -1; 
+   
     /* text-align: center; */
 }  
 

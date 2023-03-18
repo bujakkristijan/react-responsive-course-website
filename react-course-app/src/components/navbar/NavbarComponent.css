@@ -12,7 +12,7 @@
 
 .nav-links{
     flex: 1;
-    text-align: right; /* ul centrira desno*/
+    text-align: right; /* ul centrira desno*/ 
     
 }
 /* ul{
@@ -48,7 +48,7 @@
 
 
 .fa{
-    /* display: none; */
+    display: none; 
 }
 
 @media(max-width: 700px){
@@ -67,7 +67,7 @@
         transition: 1s;
     }
     .fa{
-        display: block;
+        display: block; /* da se pojave, jer su none za velike ekrane*/
         color: white;
         margin: 10px;
         font-size: 22px;

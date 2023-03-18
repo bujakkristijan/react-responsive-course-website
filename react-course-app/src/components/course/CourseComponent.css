@@ -1,0 +1,68 @@
+.course-main-container{
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    
+    /* position: absolute; */
+}
+.course-container{
+   
+    /* position: absolute; */
+    /* top: 100vh; */
+    width: 80%; /*  morao sam main na 100% pa 80% od parenta (maina) da uzima i onda margin auto radi*/
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.h1-text{
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+}
+.p-text{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between; /* da razdvoji kolone */
+}
+
+.course-column{
+    /* text-align: center;  */ /* po defaultu je text align center vec */
+    width: 30%; 
+    background-color: #fff3f3;
+    border-radius: 10px;
+    /* flex-basis: 31%; */ /* kolika da bude sirina kolone */
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    /* overflow: hidden */ /* da ne probija content ako se smanji kolona*/
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-column:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .course-column{
+        width: 100%; /* ako se radi flex-basis, ne mora width da se stavi na 100% za male ekrane*/
+    }
+}
