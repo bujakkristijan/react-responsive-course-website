@@ -1,0 +1,58 @@
+.campus-main-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-column{
+    width: 32%;
+    /* flex-basis: 32%; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden; /* da ne prelazi slika van kolone, odnosno elementa, samim tim ako nema ovo ni border-radius se ne vidi*/
+}
+.image{
+    width: 100%; /*da cela slika bude po sirini, samim tim se i smanji po visini */
+    display: block; /* po defaultu je inline, stavlja se block da bi slika i dole bila zaobljena, nisam siguran zasto ovako mora, proveriti posle */
+}
+
+.layer{
+    /* background: rgba(226, 0, 0, 0.7); */
+    /* background: transparent; */
+    height: 100%;
+    width: 100%;
+    position: absolute; /* campus-column je position: relative, ako je layer absolute, pozicionirace se u odnosu na njega, absolute se pozicionira relativno u odnosu na roditelja koji je pozicioniran  */
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.text-layer{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */ /* nema potrebe za left pa transform*/
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover .text-layer{
+    bottom: 49%;
+    opacity: 1;
+}
+
+@media(max-width:700px){
+    .campus-column{
+        width: 100%; /*ako bi stavio flex-basis umesto width za velike ekrane, ne bi moralo ovde da se podesava za male */
+    }
+}

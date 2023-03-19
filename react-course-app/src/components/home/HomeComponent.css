@@ -1,13 +1,13 @@
 .home-main-container{
     min-height: 100vh;
-    width: 100vw;
+    width: 100%; /* kad je 100vw pojavi se skrol iz nekog razloga*/
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../../images/banner.png'); 
     background-position: center;
     background-size: cover;
     position: absolute; 
     top: 0;
     left: 0;
-    z-index: -1; 
+    z-index: -1; /* da nema ovoga, ne bi se video navbar */
    
     /* text-align: center; */
 }  
