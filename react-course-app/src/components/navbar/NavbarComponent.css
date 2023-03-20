@@ -47,7 +47,7 @@
 }
 
 
-.fa{
+#menu, #x-menu{
     display: none; 
 }
 
@@ -63,10 +63,10 @@
         top: 0;
         right: -200px; /* da se ne vidi, toliki mu je i width, pa ga skloni */
         text-align: left; /* moze i ovako, pozicionira content iz nav-list-itema u levo, a moze i na nav-list-item da se stavi, uradice isto*/
-        z-index: 2; 
+        z-index: 2; /* da prekrije ostale komponente kada treba da se pojavi*/
         transition: 1s;
     }
-    .fa{
+    #menu, #x-menu{
         display: block; /* da se pojave, jer su none za velike ekrane*/
         color: white;
         margin: 10px;

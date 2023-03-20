@@ -1,0 +1,63 @@
+.testimonials-main-component{
+    width: 80%;
+    margin: auto;
+    text-align: center; /* sa ovim centrira po horizontali i p i h1 odnosno child elemente */
+    padding-top: 100px;
+}
+.row{
+   display: flex;
+   /* nasledi svakako flex i justify-content: space-between */
+    
+}
+.testimonials-column{
+    width: 45%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    
+}
+
+.image-testimonials{
+    
+    border-radius: 50%;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+.p-testimonials{
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.p-text-test{
+    padding: 0;
+}
+
+.h3-text-test{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.fa{
+    display: inline; /*  zato sto je u navbaru po defaultu display: none za hamburger menu, mora inline da ga pregazi, iako ne znam sto utice na ovaj*/
+    margin: 5px;
+    color: #f44336;
+}
+
+@media(max-width:700px){
+    .testimonials-column{
+        width: 100%;
+    }
+    .image-testimonials{
+        margin-left: 0px;
+    }
+    .fa{
+        margin: 2px;
+    }
+}
+

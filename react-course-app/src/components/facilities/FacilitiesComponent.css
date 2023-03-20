@@ -1,0 +1,44 @@
+/* proveriti zasto vec primeni css iz CampusComponent.css za ovu komponentu, kao sto vazi za campis-main-container*/
+
+.facilities-main-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.facilities-column{
+    width: 30%;
+    margin-bottom: 5%;
+    text-align: left; /* zasto samo p pomeri u levo, zasto ne i h3...kada se posebno na h3 stavi radi tako, ali zasto ako se na koloni podesi (roditelj h1,p,image) ne primeni na sve*/
+}
+
+.image{
+    width: 100%;
+    border-radius: 10px; /* zasto utice i na image iz campus komponente, isti je className, ali ne importuje se css u komponenti*/
+}
+
+.p-text-fac{
+    padding: 0;
+    text-align: left;  /* morao sam naziv klase da menjam, jer primeni i na ostale na koje ne bi trebalo */
+}
+.h3-text{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.h1-text{
+    text-align: center;
+}
+
+.p-main-text{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+@media(max-width: 700px) {
+    .facilities-column{
+        width: 100%;
+    }
+}

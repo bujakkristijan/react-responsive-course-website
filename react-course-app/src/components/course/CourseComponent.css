@@ -29,7 +29,7 @@
 }
 
 .row{
-    margin: 5%;
+    margin: 2%;
     display: flex;
     justify-content: space-between; /* da razdvoji kolone */
 }

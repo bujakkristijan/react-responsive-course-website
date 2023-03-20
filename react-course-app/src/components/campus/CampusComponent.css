@@ -51,8 +51,17 @@
     opacity: 1;
 }
 
+.p-text{
+    padding-top: 1%;
+    padding-bottom: 2%; 
+    text-align: center;
+}
+
 @media(max-width:700px){
     .campus-column{
         width: 100%; /*ako bi stavio flex-basis umesto width za velike ekrane, ne bi moralo ovde da se podesava za male */
+    }
+    .p-text{
+        padding-bottom: 5%; /* primeni i na druge, proveriti zasto ali treba svakako */ 
     }
 }

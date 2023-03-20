@@ -27,7 +27,7 @@ const NavbarComponent = () => {
             <img className='img-logo' src={require('../../images/logo.png')} alt=''></img>
         </Link>
         <div className='nav-links' id='navLinks'>
-            <i className="fa fa-times" onClick={hideMenu}></i>
+            <i id="x-menu"className="fa fa-times" onClick={hideMenu}></i>
             <ul className='nav-ul'>
                 <li className='nav-list-item'>
                     <Link className='nav-link'>Home</Link>
