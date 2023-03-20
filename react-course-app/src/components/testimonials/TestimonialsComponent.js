@@ -1,8 +1,10 @@
 import React from 'react'
+import CallToActionComponent from '../call-to-action/CallToActionComponent'
 import './TestimonialsComponent.css'
 
 const TestimonialsComponent = () => {
   return (
+    <>
     <div className='testimonials-main-component'>
        <h1 className='h1-testimonials'>What Our Students Says</h1>
        <p className='p-testimonials'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -34,6 +36,8 @@ const TestimonialsComponent = () => {
             </div>
         </div>
     </div>
+    <CallToActionComponent/>
+    </>
   )
 }
 

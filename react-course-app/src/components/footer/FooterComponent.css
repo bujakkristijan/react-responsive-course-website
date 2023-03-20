@@ -1,0 +1,31 @@
+.footer-main-container{
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.h3-footer{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    /* font-weight: 600; */
+}
+
+.icons{
+    margin-top: 2%;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin{
+    color: black !important;
+    font-size: 20px;
+    margin: 0 13px !important;
+    cursor: pointer; 
+    /* nasledi od fa proslih pa mora important */
+    
+}
+
+@media(max-width:700px){
+    .icons{
+        margin-top: 10%;
+    }
+}
