@@ -1,6 +1,7 @@
 ### Responsive course website with focus on CSS
 
-Small responsive course project implemented using ReactJS library with focus on styling in CSS. Logical problems and functionality in this project aren't implemented.
+Small responsive course project implemented using ReactJS library with focus on styling in CSS. Logical problems and functionality in this project aren't implemented. <br/>
+**Note:** I found tutorial on YouTube (HTML, JS, CSS), so I did the same in ReactJS to practice my CSS skills.
 
 ### Appliction UI preview:
 
